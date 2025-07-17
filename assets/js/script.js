@@ -4,7 +4,7 @@ function downloadPDF() {
     var xhr = new XMLHttpRequest();
 
     // Define the PDF file URL
-    var pdfUrl = 'Vijay Thakur (Web-developer).pdf';
+    var pdfUrl = 'Vijay_Thakur_Front-End-Developer_Resume.pdf';
 
     // Open the connection to the server
     xhr.open('GET', pdfUrl, true);
@@ -32,7 +32,7 @@ function downloadPDF() {
             a.href = url;
 
             // Set the anchor's download attribute with the desired filename
-            a.download = 'Vijay Thakur (Web-developer).pdf';
+            a.download = 'Vijay_Thakur_Front-End-Developer_Resume.pdf';
             // var pdfUrl = 'ResumeFrontenddeveloper.pdf';
 
             // Append the anchor to the document
