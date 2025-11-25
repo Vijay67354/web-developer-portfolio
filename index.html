@@ -1,0 +1,1260 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Developer Vijay | Website Developer</title>
+    <meta name="description" content="Developer Vijay | Website Developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Vijaypreloader.jpg">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="https://kit.fontawesome.com/a359d5e7cb.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="black-background">
+
+    <!--Preloader-->
+    <!-- <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="loader-icon"><img src="assets/img/Vijaypreloader.jpg" alt="Vijay Preloader"></div>
+            </div>
+        </div>
+    </div> -->
+    <!--Preloader-end -->
+
+    <!-- Custom-cursor -->
+    <div class="mouseCursor cursor-outer"></div>
+    <div class="mouseCursor cursor-inner"><span>Drag</span></div>
+    <!-- Custom-cursor-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="fas fa-angle-up"></i>
+        </button>
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+    <header>
+        <div id="sticky-header" class="menu-area menu-style-two transparent-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                        <div class="menu-wrap">
+                            <nav class="menu-nav">
+                                <div class="logo">
+
+                                    <a class="navbar-brand" href="#" style="color: white; color: white;font-weight: bold; "><img src='assets/img/logo.jpg' style='padding-right: 10px;'>Vijay</img>
+                                    </a>
+                                </div>
+                                <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                    <ul class="navigation">
+
+                                    </ul>
+                                </div>
+                                <div class="header-action">
+
+                                </div>
+                            </nav>
+                        </div>
+
+
+                        <div class="mobile-menu">
+                            <nav class="menu-box">
+                                <div class="close-btn"><i class="fas fa-times"></i></div>
+                                <div class="nav-logo">
+                                    <a href='/'><img src="assets/img/logo.jpg" alt="Logo"></a>
+                                </div>
+
+                            </nav>
+                        </div>
+                        <div class="menu-backdrop"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-area-end -->
+
+
+
+    <!-- main-area -->
+    <main>
+
+        <!-- banner-area -->
+        <section class="banner-area-two" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="">
+                        <div class="banner-content-two">
+                            <h2 class="titlecoding" style="color: white;"> CODING WITH </h2>
+                            <h2 class="titlecoding" style="color: white;">PATIENCE, CREATING </h2>
+                            <h2 class="titlecoding" style="color: white;">WITH PURPOSE</h2>
+
+                            <h4 class="titleexperiecnce" style="margin-top: 30px; letter-spacing: 1px;">
+
+                                Passionate and creative frontend developer with +2 years of experience.
+
+
+
+                            </h4>
+                            <div class="banner-content-bottom">
+                               
+                                <button class="btn" onclick="downloadPDF()">Download Resume</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="btn" onclick="downloadPDF()">Download Resume</button> -->
+
+            <script>
+      
+function downloadPDF() {
+    // Create a new XMLHttpRequest object
+    var xhr = new XMLHttpRequest();
+
+    // Define the PDF file URL
+    var pdfUrl = 'Vijay_Thakur_Front-End-Developer_Resume.pdf';
+
+    // Open the connection to the server
+    xhr.open('GET', pdfUrl, true);
+
+    // Set the responseType to 'blob' (binary data)
+    xhr.responseType = 'blob';
+
+    // Define the onload event handler
+    xhr.onload = function() {
+        // Check if the request was successful (status 200)
+        if (xhr.status === 200) {
+            // Create a blob from the response
+            var blob = new Blob([xhr.response], {
+                type: 'application/pdf'
+            });
+
+            // Create a hidden anchor element
+            var a = document.createElement('a');
+            a.style.display = 'none';
+
+            // Create a URL for the blob data
+            var url = window.URL.createObjectURL(blob);
+
+            // Set the anchor's href attribute to the blob URL
+            a.href = url;
+
+            // Set the anchor's download attribute with the desired filename
+            a.download = 'Vijay_Thakur_Front-End-Developer_Resume.pdf';
+            // var pdfUrl = 'ResumeFrontenddeveloper.pdf';
+
+            // Append the anchor to the document
+            document.body.appendChild(a);
+
+            // Simulate a click on the anchor to trigger the download
+            a.click();
+
+            // Remove the anchor from the document
+            document.body.removeChild(a);
+
+            // Release the blob URL
+            window.URL.revokeObjectURL(url);
+        }
+    };
+
+    // Send the request
+    xhr.send();
+}
+
+            </script>
+            
+            </script>
+            
+
+            <div class="banner-shape-wrap-two" style="margin-top: 30px;">
+
+                <img src="assets/img/banner/h2_banner_shape01.png" alt="" class="rotateme">
+                <img src="assets/img/banner/h2_banner_shape02.png" alt="" class="ribbonRotate">
+                <img src="assets/img/banner/h2_banner_shape03.png" alt="" class="ribbonRotate">
+                <img src="assets/img/banner/h2_banner_shape04.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- about-area -->
+        <section class="about-area-two" style="margin-top: 60px;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-0 order-lg-2">
+                        <div class="about-img-two text-center">
+                            <img src="assets/img/images/h2_about_img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content-two">
+                            <div class="section-title white-title title-style-two mb-30">
+
+
+                                <h5 class="titletextbanner" style="color: white; line-height: 40px;">
+
+                                    Experienced Front-End Developer with +2 years of experience transforming Figma designs into fully functional, responsive websites. Proficient in HTML, CSS, JavaScript, React.js, and Vue.js. Skilled in converting Figma designs into developed functional
+                                    websites that are mobile-responsive friendly. Maintaining websites, making any alterations, and implementing any new features in an existing website.
+                                </h5>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-shape-wrap">
+                <img src="assets/img/images/h2_about_shape01.png" alt="" class="shape-one" data-parallax='{"y" : 100 }'>
+                <img src="assets/img/images/h2_about_shape02.png" alt="" class="shape-two">
+                <img src="assets/img/images/h2_about_shape03.png" alt="" class="shape-three">
+            </div>
+        </section>
+
+        <style>
+            .sticky-icon {
+                z-index: 1;
+                position: fixed;
+                top: 15%;
+                right: 0%;
+                width: 220px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .sticky-icon a {
+                transform: translate(160px, 0px);
+                border-radius: 50px 0px 0px 50px;
+                text-align: left;
+                margin: 2px;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 10px;
+                font-size: 22px;
+                font-family: 'Oswald', sans-serif;
+                transition: all 0.8s;
+            }
+
+            .sticky-icon a:hover {
+                color: #FFF;
+                transform: translate(0px, 0px);
+            }
+
+            .sticky-icon a:hover i {
+                transform: rotate(360deg);
+            }
+
+            /*.search_icon a:hover i  {
+transform:rotate(360deg);}*/
+
+            .Facebook {
+                background-color: #2C80D3;
+                color: #FFF;
+            }
+
+            .Youtube {
+                background-color: #fa0910;
+                color: #FFF;
+            }
+
+            .Twitter {
+                background-color: #53c5ff;
+                color: #FFF;
+            }
+
+            .Instagram {
+                background-color: #FD1D1D;
+                color: #FFF;
+            }
+
+            .Google {
+                background-color: #d34836;
+                color: #FFF;
+            }
+
+            .sticky-icon a i {
+                background-color: #FFF;
+                height: 40px;
+                width: 40px;
+                color: #000;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+                margin-right: 20px;
+                transition: all 0.5s;
+            }
+
+            .sticky-icon a i.fa-facebook-f {
+                background-color: #FFF;
+                color: #2C80D3;
+            }
+
+            .sticky-icon a i.fa-google-plus-g {
+                background-color: #FFF;
+                color: #d34836;
+            }
+
+            .sticky-icon a i.fa-instagram {
+                background-color: #FFF;
+                color: #FD1D1D;
+            }
+
+            .sticky-icon a i.fa-youtube {
+                background-color: #FFF;
+                color: #fa0910;
+            }
+
+            .sticky-icon a i.fa-twitter {
+                background-color: #FFF;
+                color: #53c5ff;
+            }
+        </style>
+
+
+        <!-- <div class="sticky-icon" style="margin-top: 70px;">
+    <a href="https://github.com/Vijay67354" class="Instagram"><i class="fa-brands fa-github"></i> Github </a>
+    <br/>
+    <a href="https://www.linkedin.com/in/vijay-thakur241/" class="Facebook"><i class="fa-brands fa-linkedin" style="color: #1e88e5;"></i> LinkedIn </a>
+
+</div> -->
+
+        <section class="services-area-two" style="margin-top: 80px;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title title-style-two white-title mb-65 text-center">
+                            <!-- <span class="sub-title">SOME EXCITING 🧑🏻‍💻 PROJECT</span> -->
+                            <h2 class="title">SOME EXCITING 🧑🏻‍💻 PROJECT I'VE DONE
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="row justify-content-center " style="gap: 40px;">
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8">
+                        <a href="https://github.com/Vijay67354/ecommerce-web">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <img src="assets/img/ecommerce.png" class="" style="width: full !important; height: full !important;">
+
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">Ecommerce Website</h2>
+                                <p>Developer fully functional ecommerce platform using Reactjs and Redux.</p>
+                            </div>
+                           
+                                <div class="reactnode" style=" gap: 30px; display: flex;  margin-top: 20px;">
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Reactjs</button>
+                                    </div>
+                                    <div class="reactnodes">
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Nodejs</button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="reactnode" style=" gap:16px; margin-top: 30px; display: flex; align-items: center;">
+                                <diiv>
+                                    <h4 class="titletext" style="color: white !important;">View Project</h4>
+                                </diiv>
+                                <div>
+                                    <a href="https://ecommerce-vijaysite.netlify.app/" style="cursor: pointer; text-decoration: none; color: inherit;">
+                                    <i class="fa-solid fa-arrow-right rotate-on-hover" style="background-color: greenyellow; margin-top: -10px; padding: 10px; border-radius: 100px;"></i>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="row justify-content-center " style="gap: 40px;">
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <img src="assets/img/banner/outrank.png" class="" style="width: full !important; height: full !important;">
+
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">Outrank Website</h2>
+                                <p>Developer fully functional ecommerce platform using Reactjs and Nodejs complete with user authentication.</p>
+                            </div>
+                            <a href="Https://Outrank-Next.Vercel.App//">
+                                <div class="reactnode" style=" gap: 30px; display: flex;  margin-top: 20px;">
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Reactjs</button>
+                                    </div>
+                                    <div class="reactnodes">
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Nodejs</button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="reactnode" style=" gap:16px; margin-top: 30px; display: flex; align-items: center;">
+                                <diiv>
+                                    <h4 class="titletext" style="color: white !important;">View Project</h4>
+                                </diiv>
+                                <div>
+                                    <a href="https://outrank-next.vercel.app/" style="cursor: pointer; text-decoration: none; color: inherit;">
+                                    <i class="fa-solid fa-arrow-right rotate-on-hover" style="background-color: greenyellow; margin-top: -10px; padding: 10px; border-radius: 100px;"></i>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <img src="assets/img/banner/realstate1.png" class="" style="width: full !important; height: full !important;">
+
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">Real Estate Web</h2>
+                                <p>Real Estate: Unlocking Opportunities in Property Ownership, Investment, and Development.</p>
+                            </div>
+                            <a href="https://realstatte.netlify.app/">
+                                <div class="reactnode" style=" gap: 30px; display: flex;  margin-top: 20px;">
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Reactjs</button>
+                                    </div>
+                                    <div class="reactnodes">
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Tailwind Css</button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="reactnode" style=" gap:16px; display: flex; margin-top: 30px; align-items: center;">
+                                <diiv>
+                                    <h4 class="titletext" style="color: white !important;">View Project</h4>
+                                </diiv>
+                                <div>
+                                    <a href="https://realstatte.netlify.app/" style="cursor: pointer; text-decoration: none; color: inherit;">
+                                    <i class="fa-solid fa-arrow-right rotate-on-hover" style="background-color: greenyellow; margin-top: -10px; padding: 10px; border-radius: 100px;"></i>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="row justify-content-center " style="gap: 40px;">
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <img src="assets/img/banner/digitalrai.png" class="" style="width: full !important; height: full !important;">
+
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">Digital Rai</h2>
+                                <p>Empowering brands through innovative digital solutions.</p>
+                            </div>
+                            <a href="https://digitalrai.co.in/">
+                                <div class="reactnode" style=" gap: 30px; display: flex;  margin-top: 20px;">
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Php</button>
+                                    </div>
+                                    <div class="reactnodes">
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Javascript</button>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <div class="reactnode" style=" gap:16px; display: flex; margin-top: 30px; align-items: center;">
+                                <diiv>
+                                    <h4 class="titletext" style="color: white !important;">View Project</h4>
+                                </diiv>
+                                <div>
+                                    <a href="https://digitalrai.co.in/" style="cursor: pointer; text-decoration: none; color: inherit;">
+                                        <i class="fa-solid fa-arrow-right rotate-on-hover" style="background-color: greenyellow; margin-top: -10px; padding: 10px; border-radius: 100px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <img src="assets/img/banner/zymweb.png" class="" style="width: full !important; height: full !important;">
+
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">Zym Web</h2>
+                                <p>ZYM offers a range of electrolyte tablets and hydration powders designed to replenish vital nutrients lost during physical activity.</p>
+                            </div>
+                            <a href="https://vijay67354.github.io/Zym-website/">
+                                <div class="reactnode" style=" gap: 30px; display: flex;  margin-top: 20px;">
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Reactjs</button>
+                                    </div>
+                                    <div class="reactnodes">
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Nodejs</button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="reactnode" style=" gap:16px; display: flex; margin-top: 30px; align-items: center;">
+                                <diiv>
+                                    <h4 class="titletext" style="color: white !important;">View Project</h4>
+                                </diiv>
+                                <div>
+                                    <a href="https://vijay67354.github.io/Zym-website/" style="cursor: pointer; text-decoration: none; color: inherit;">
+                                        <i class="fa-solid fa-arrow-right rotate-on-hover" style="background-color: greenyellow; margin-top: -10px; padding: 10px; border-radius: 100px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                                <div class="services-item-two">
+                                    <div class="services-icon-two">
+                                        <img src="assets/img/icon/services_icon04.png" alt="">
+                                    </div>
+                                    <div class="services-content-two">
+                                        <h2 class="title"><a href="services-details.html">React Development</a></h2>
+                                        <p>I turn ideas into mobile magic. Crafting apps that work like a dream, I code, design, and bring innovation to life for a smooth user experience.</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                </div>
+
+
+
+                <div class="row justify-content-center " style="gap: 40px;">
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <img src="assets/img/banner/battery.png" class="" style="width: full !important; height: full !important;">
+
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">ATS Website</h2>
+                                <p>Developer fully functional ecommerce platform using Reactjs and Nodejs complete with user authentication.</p>
+                            </div>
+                            <a href="https://ats-solar.vercel.app/">
+                                <div class="reactnode" style=" gap: 30px; display: flex;  margin-top: 20px;">
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Reactjs</button>
+                                    </div>
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Nodejs</button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="reactnode" style="display: flex; gap:16px; margin-top: 30px; align-items: center;">
+                                <diiv>
+                                    <h4 class="titletext" style="color: white !important;">View Project</h4>
+                                </diiv>
+                                <div>
+                                    <a href="https://ats-solar.vercel.app/" style="cursor: pointer; text-decoration: none; color: inherit;">
+                                            <i class="fa-solid fa-arrow-right rotate-on-hover" style="background-color: greenyellow; margin-top: -10px; padding: 10px; border-radius: 100px;"></i>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                        .rotate-on-hover {
+                            transition: transform 0.3s ease-in-out;
+                        }
+
+                        .rotate-on-hover:hover {
+                            transform: rotate(90deg);
+                        }
+                    </style>
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <img src="assets/img/banner/blog (1) (1).jpg" class="" style="width: full !important; height: full !important;">
+
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">Blog Web</h2>
+                                <p>Blog: Inspiring content, meaningful stories, and diverse perspectives for every reader.</p>
+                            </div>
+                            <a href="https://vijay67354.github.io/Blogweb/">
+                                <div class="reactnode" style=" gap: 30px; display: flex;  margin-top: 20px;">
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Reactjs</button>
+                                    </div>
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Nodejs</button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="reactnode" style=" gap:16px; display: flex; margin-top: 30px; align-items: center;">
+                                <diiv>
+                                    <h4 class="titletext" style="color: white !important;">View Project</h4>
+                                </diiv>
+                                <div>
+                                    <a href="https://vijay67354.github.io/Blogweb/" style="cursor: pointer; text-decoration: none; color: inherit;">
+                                            <i class="fa-solid fa-arrow-right rotate-on-hover" style="background-color: greenyellow; margin-top: -10px; padding: 10px; border-radius: 100px;"></i>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8">
+                                <div class="services-item-two">
+                                    <div class="services-icon-two">
+                                        <img src="assets/img/banner/ecommerce.png" class="" style="width: full !important; height: full !important;">
+                                   
+                                    </div>
+                                    <div class="services-content-two">
+                                        <h2 class="title">Ecommerce Web</h2>
+                                        <p>Ecommerce Web: Shop, discover, and save on the latest trends. Your ultimate e-commerce destination.</p>
+                                    </div>
+                                    <a href="https://ecomercewebsites.000webhostapp.com/">
+                                        <div class="reactnode" style=" gap: 30px; display: flex;  margin-top: 20px;">
+                                            <div>
+                                                <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Reactjs</button>
+                                            </div>
+                                            <div>
+                                                <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Nodejs</button>
+                                            </div>
+                                        </div>
+                                    </a>
+                    
+                                    <div class="reactnode" style=" gap:16px; display: flex; margin-top: 30px; align-items: center;">
+                                       <diiv>
+                                        <h4 class="titletext" style="color: white !important;">View Project</h4>
+                                       </diiv>
+                                       <div>
+                                        <a href="https://ecomercewebsites.000webhostapp.com/" style="cursor: pointer; text-decoration: none; color: inherit;">
+                                            <i class="fa-solid fa-arrow-right rotate-on-hover" style="background-color: greenyellow; margin-top: -10px; padding: 10px; border-radius: 100px;"></i>
+                                        </a>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <section class="services-area-two" style="margin-top: 30px;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title title-style-two white-title mb-65 text-center">
+                            <!-- <span class="sub-title">SOME EXCITING 🧑🏻‍💻 PROJECT</span> -->
+                            <h2 class="title">WORDPRESS PROJECT
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center " style="gap: 40px;">
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <img src="assets/img/banner/cimplifie.png" class="" style="width: full !important; height: full !important;">
+
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">Cimplifie</h2>
+                                <p>Creative solutions, strategic insights—your trusted partner for unparalleled success.</p>
+                            </div>
+                            <a href="https://cimplifie.com/">
+                                <div class="reactnode" style=" gap: 30px; display: flex; margin-top: 20px;">
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Wordpress</button>
+                                    </div>
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;"> Javascript</button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="headder" style="display: flex; gap:16px; margin-top: 30px; align-items: center;">
+                                <diiv>
+                                    <h4 class="titletext" style="color: white !important;">View Project</h4>
+                                </diiv>
+                                <div>
+                                    <a href="https://cimplifie.com/" style="cursor: pointer; text-decoration: none; color: inherit;">
+                                        <i class="fa-solid fa-arrow-right rotate-on-hover" style="background-color: greenyellow; margin-top: -10px; padding: 10px; border-radius: 100px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <img src="assets/img/banner/achievement.png" class="" style="width: full !important; height: full !important;">
+
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">Portfolio</h2>
+                                <p>Showcasing talent, creativity, and achievements—your professional journey, beautifully presented</p>
+                            </div>
+                            <a href="https://jugendrasingh.com/">
+                                <div class="reactnode" style=" gap: 30px; display: flex;  margin-top: 20px;">
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Wordpress</button>
+                                    </div>
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Html </button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="headder" style="display: flex; gap:16px; margin-top: 30px; align-items: center;">
+                                <div>
+                                    <h4 class="titletext" style="color: white !important;">View Project</h4>
+                                </div>
+                                <div>
+                                    <a href="https://jugendrasingh.com/" style="cursor: pointer; text-decoration: none; color: inherit;">
+                                        <i class="fa-solid fa-arrow-right rotate-on-hover" style="background-color: greenyellow; margin-top: -10px; padding: 10px; border-radius: 100px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <img src="assets/img/yogasite.png" class="" style="width: full !important; height: full !important;">
+
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">Yogasite</h2>
+                                <p>Create a serene and responsive WordPress yoga website to showcase classes, schedules, and holistic wellness tips effortlessly.</p>
+                            </div>
+                            <a href="https://jugendrasingh.com/">
+                                <div class="reactnode" style=" gap: 30px; display: flex;  margin-top: 20px;">
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Wordpress</button>
+                                    </div>
+                                    <div>
+                                        <button type="button" style="padding: 8px 30px; border-radius: 20px; background: transparent; border: 2px solid grey;">Html </button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="headder" style="display: flex; gap:16px; margin-top: 30px; align-items: center;">
+                                <div>
+                                    <h4 class="titletext" style="color: white !important;">View Project</h4>
+                                </div>
+                                <div>
+                                    <a href=" https://yogasite.great-site.net/?i=2" style="cursor: pointer; text-decoration: none; color: inherit;">
+                                        <i class="fa-solid fa-arrow-right rotate-on-hover" style="background-color: greenyellow; margin-top: -10px; padding: 10px; border-radius: 100px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                                <div class="services-item-two">
+                                    <div class="services-icon-two">
+                                        <img src="assets/img/icon/services_icon04.png" alt="">
+                                    </div>
+                                    <div class="services-content-two">
+                                        <h2 class="title"><a href="services-details.html">React Development</a></h2>
+                                        <p>I turn ideas into mobile magic. Crafting apps that work like a dream, I code, design, and bring innovation to life for a smooth user experience.</p>
+                                    </div>
+                                </div>
+                            </div> -->
+            </div>
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <!-- services-area -->
+
+        <section class="services-area-two" style="margin-top: 30px;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title title-style-two white-title mb-65 text-center">
+                            <!-- <span class="sub-title">SOME EXCITING 🧑🏻‍💻 PROJECT</span> -->
+                            <h2 class="title">I SPECIALIZE IN A RANGE OF SKILLS
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <!-- <img src="assets/img/icon/hire.jpg" alt=""> -->
+                                <i class="fa-brands fa-html5" style="color: rgb(255, 45, 3); font-size: 70px;"></i>
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">HTML5</h2>
+                                <p>HTML5 improves web structure, design, multimedia, and interactivity for developers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                        <div class="services-item-two active">
+                            <div class="services-icon-two">
+                                <!-- <img src="assets/img/icon/services_icon02.png" alt=""> -->
+                                <i class="fa-brands fa-css3-alt" style="color: rgb(0, 174, 255); font-size: 70px; "></i>
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">CSS3</h2>
+                                <p>CSS3 enhances web styling, layout, animation, and responsiveness for design.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <!-- <img src="assets/img/icon/services_icon03.png" alt=""> -->
+
+                                <i class="fa-brands fa-js" style="color: rgb(255, 234, 0); font-size: 70px;"></i>
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title"><a href="services-details.html">JavaScript</a></h2>
+                                <p>Ensuring websites are optimized for various devices and screen sizes, providing a seamless user experience across desktops, tablets, and smartphones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="services-area-two">
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <!-- <img src="assets/img/icon/hire.jpg" alt=""> -->
+                                <i class="fa-brands fa-bootstrap" style="color: rgb(49, 42, 241); font-size: 70px;"></i>
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">BOOTSTRAP</h2>
+                                <p>Bootstrap streamlines web development with a responsive, mobile-first framework, providing pre-designed components for easier and faster design implementation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                        <div class="services-item-two active">
+                            <div class="services-icon-two">
+                                <!-- <img src="assets/img/icon/services_icon02.png" alt=""> -->
+                                <i class="fa-brands fa-react" style="color: rgb(0, 153, 255); font-size: 70px; "></i>
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">REACTJS</h2>
+                                <p>ReactJS simplifies UI development, supports component-based architecture, and enhances performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <!-- <img src="assets/img/icon/services_icon03.png" alt=""> -->
+                                <img src="assets/img/tailwind-css-icon (1).jpg" style="color: rgb(0, 0, 0); font-size: 50px; margin-top: 23px; width: 70px; height: 50px;">
+                                <!-- <i class="fa-brands fa-js" style="color: rgb(255, 255, 255); font-size: 70px;"></i> -->
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title"><a href="services-details.html">Tailwind</a></h2>
+                                <p>Tailwind CSS streamlines styling with utility-first classes, enhancing flexibility and maintainability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <section class="services-area-two">
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <!-- <img src="assets/img/icon/hire.jpg" alt=""> -->
+                                <i class="fa-brands fa-github" style="color: rgb(255, 255, 255); font-size: 70px;"></i>
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">GITHUB</h2>
+                                <p> GitHub facilitates collaborative code management, version control, and project collaboration.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                        <div class="services-item-two">
+                            <div class="services-icon-two">
+                                <!-- <img src="assets/img/icon/hire.jpg" alt=""> -->
+                                <i class="fa-brands fa-wordpress" style="color: rgb(0, 217, 255); font-size: 70px;"></i>
+                            </div>
+                            <div class="services-content-two">
+                                <h2 class="title">WORDPRESS</h2>
+                                <p>WordPress simplifies website creation with customizable themes and extensive plugin support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <!-- services-area-end -->
+
+        <!-- services-area -->
+        <section class="services-area-two" style="margin-top: 30px;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title title-style-two white-title mb-65 text-center">
+                            <!-- <span class="sub-title">I TAKE 🏆 PRIDE IN</span> -->
+                            <span class="title">I TAKE 🏆 PRIDE IN</span>
+                            <h2 class="title">MY ACCOMPLISHMENTS</h2>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div style="justify-content: space-between;">
+                    <div>
+                        <div class="services-icon-two">
+                            <i class="fa-solid fa-star-of-life" style="color: rgb(255, 0, 0); font-size: 30px; "></i>
+                        </div>
+                        <div class="services-content-two">
+
+                            <p class="titletext" style="color: white;">
+
+                                Earned React.js Certificate from Udemy, demonstrating front-end development proficiency. </p>
+                            <p class="titletext" style="color: white;">Collaborated on open-source projects, enhancing teamwork and coding skills.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="services-icon-two" style="margin-top: 60px; text-align: right;">
+                            <i class="fa-solid fa-star-of-life" style="color: greenyellow; font-size: 30px; text-align: right; "></i>
+                        </div>
+                        <div class="services-content-two" style="text-align: right;">
+
+                            <p class="titletext" style="color: white;">Collaborated for on-time project deliveries. </p>
+                            <p class="titletext" style="color: white;">Delivered client satisfaction through successful project outcomes.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="services-icon-two" style="margin-top: 60px; text-align: left;">
+                            <i class="fa-solid fa-star-of-life" style="color: rgb(37, 4, 255); font-size: 30px; text-align: left; "></i>
+                        </div>
+                        <div class="services-content-two" style="text-align: left;">
+
+                            <p class="titletext" style="color: white;">Collaborated for on-time project deliveries. </p>
+                            <p class="titletext" style="color: white;">Delivered client satisfaction through successful project outcomes.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="work-area pt-110 pb-120" style="background-color: #000; margin-top: 60px;">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-12">
+                        <div class="work-content">
+                            <div class="section-title title-style-two white-title mb-30">
+
+                                <h2 class="title" style="text-align: center;">My Certificate </h2>
+                            </div>
+                            <div class="work-list">
+                                <ul class="list-wrap">
+
+                                    <li style="text-align: center;">
+
+
+                                        <div class="content" style="margin-bottom: 30px;">
+                                            <h4 class="title">Coding Block Mern Stack Full Stack Web Development [Aug 2023 - May 2024]</h4>
+                                            <a href="https://drive.google.com/file/d/1qmn7iDhf0HkwMADeMkAAo_yJ-WlvNFOl/view?usp=sharing">https://drive.google.com/file/d/1qmn7iDhf0HkwMADeMkAAo_yJ-WlvNFOl/view?usp=sharing</p>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h4 class="title">Nodejs Tutorial and Projects Course [Udemy]</h4>
+                                                        <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-fffc606a-aa97-4195-97cc-5d8f2d11f834.pdf">https://udemy-certificate.s3.amazonaws.com/pdf/UC-fffc606a-aa97-4195-97cc-5d8f2d11f834.pdf</p>
+                                                    </div>
+                                                </li>
+                                                <li style="text-align: center;">
+                                                 
+                                                    <div class="content">
+                                                        <h4 class="title">Modern React With Redux 2023 Update [Udemy]</h4>
+                                                        <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-d04f38b2-b987-4a56-b772-abff7f0d05af.pdf" ><strong>Modern React With Redux</strong> : https://udemy-certificate.s3.amazonaws.com/pdf/UC-9771ab17-d595-440c-a42e-831c2a7ffc38.pdf"</a>
+                                        </div>
+                                    </li>
+                                    <li style="text-align: center;">
+
+                                        <div class="content">
+                                            <h4 class="title">Data Structure and Algorithm [Udemy]</h4>
+                                            <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-9771ab17-d595-440c-a42e-831c2a7ffc38.pdf"><strong>Datastructure and Algorithm </strong>:   https://udemy-certificate.s3.amazonaws.com/pdf/UC-d04f38b2-b987-4a56-b772-abff7f0d05af.pdf</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-shape-wrap">
+                <img src="assets/img/images/work_shape01.png" alt="">
+                <img src="assets/img/images/work_shape02.png" alt="" data-parallax='{"y" : 80 }'>
+                <img src="assets/img/images/work_shape03.png" alt="">
+                <img src="assets/img/images/work_shape04.png" alt="">
+                <img src="assets/img/images/work_shape05.png" alt="">
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- work-area-end -->
+        <!-- contact-area -->
+        <section class="contact-area" id="contact" style="background-color: black;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title title-style-two white-title text-center mb-75">
+                            <!-- <span class="sub-title">Contact Me</span> -->
+                            <h2 class="title">Contact Me</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 order-0 order-lg-2">
+                        <div class="contact-info-wrap">
+                            <ul class="list-wrap">
+                                <li>
+                                    <div class="icon">
+                                        <img src="assets/img/icon/linkedin (1).png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Linkedin</h4>
+                                        <a href="https://www.linkedin.com/in/vijay-thakur241/">https://www.linkedin.com/in/vijay-thakur241/</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <img src="assets/img/images/github.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Github</h4>
+                                        <a href="https://github.com/Vijay67354">https://github.com/Vijay67354</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="contact-form-wrap">
+                            <form id="contactForm" method="POST">
+                                <input type="hidden">
+                                <input type="hidden">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-grp">
+                                            <input type="text" pattern="[A-Za-z ]+" title="Please enter only alphabet characters" id="name" placeholder="Name" name="name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-grp">
+                                            <input type="email" id="email" placeholder="Email Address" name="email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-grp">
+                                    <textarea name="comment" id="comment" placeholder="How can we help you? Feel free to get in touch!" required></textarea>
+                                </div>
+                                <input type="hidden" name="redirect" value="https://Vijay-cse.netlify.app/index.html">
+                                <button type="submit" class="btn" style="padding: 18px 37px;">Submit Now <span></span></button>
+                            </form>
+                            <div id="success-message" style="display: none; color: white; margin-top: 20px;">
+                                Your message has been successfully submitted!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact-area-end -->
+
+    </main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var contactForm = document.getElementById('contactForm');
+        var successMessage = document.getElementById('success-message');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent default form submission
+
+                // Get form data
+                var formData = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    comment: document.getElementById('comment').value
+                };
+
+                // Store form data in localStorage
+                localStorage.setItem('formData', JSON.stringify(formData));
+
+                // Wait 1 second before showing success message
+                setTimeout(function () {
+                    successMessage.textContent = "Data submitted successfully";
+                    successMessage.style.display = 'block';
+
+                    // Hide message after 2 seconds
+                    setTimeout(function () {
+                        successMessage.style.display = 'none';
+                        contactForm.reset(); // Reset the form
+                    }, 2000);
+
+                }, 1000); // Delay before showing success message
+            });
+        }
+    });
+</script>
+
+
+    <!-- footer-area -->
+    <footer>
+        <div class="footer-area-two">
+            <div class="container">
+                <div class="footer-bottom-two">
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <div class="copyright-text" style="text-align: center;">
+                                <p>© 2024 Vijay | Front-end Web-Developer</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
+
+
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/jquery.parallaxScroll.min.js"></script>
+    <script src="assets/js/tween-max.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
